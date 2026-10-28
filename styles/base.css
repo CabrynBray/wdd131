@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #134611;
+}
+
+.course-heading {
+    padding: 20px;
+    text-align: center;
+    background-color: #134611;
+    color: #E8FCCF;
+}
+
+#course-title {
+    display: block;
+    font-family: "Limelight", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3E8914;
+}
+
+nav a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #96E072;
+    color: #134611;
+}
+
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Limelight", sans-serif;
+    font-weight: 500;
+    color: #134611;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #3DA35D;
+    color: #134611;
+    font-size: 18px;
+}
+
+.card {
+    border: 1px solid #96E072;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #E8FCCF;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.intro-section {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.profile-image {
+    width: 125px;
+    height: auto;
+}
+
+.location-section h3 {
+    text-align: center;
+    border-bottom: 1px solid #96E072;
+    padding-bottom: 5px;
+    color: #134611;
+}
+
+.location-content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.location-content figure {
+    width: 25%;
+    margin: 0;
+    text-align: center;
+}
+
+.location-content img {
+    width: 100%;
+    height: auto;
+}
+
+.location-content figcaption {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.location-text {
+    flex: 1;
+}
+
+.resources-body {
+    padding: 70px 15px 15px;
+}
+
+.resources-body a {
+    color: #134611;
+}
+
+footer {
+    padding: 12px;
+    text-align: center;
+    background-color: #134611;
+    color: #E8FCCF;
+}
+
+footer p {
+    margin: 5px;
+}
+
+#lastModified {
+    color: #96E072;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-body {
+        padding-top: 15px;
+    }
+
+    .location-content {
+        flex-direction: column;
+    }
+
+    .location-content figure {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

@@ -21,12 +21,12 @@ body {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #3E8914;
+    background-color: #134611;
 }
 
 nav a {
     padding: 12px;
-    color: white;
+    color: #E8FCCF;
     text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ h1 {
     margin: 0;
     padding: 10px;
     text-align: center;
-    background-color: #3DA35D;
+    background-color: #c1fda3;
     color: #134611;
     font-size: 18px;
 }
@@ -142,7 +142,7 @@ footer p {
 }
 
 #lastModified {
-    color: #96E072;
+    color: #E8FCCF;
     font-size: 13px;
 }
 

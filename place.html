@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - W03 Assignment: Country Page - Cabryn Bray</title>
+    <meta name="description" content="WDD 131 - W03 Assignment: Country Page - Cabryn Bray - Country Page">
+    <meta name="author" content="Cabryn Bray">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Cape Town - South Africa</h1>
+    </header>
+
+    <main>
+
+        <div class="hero">
+
+            <picture>
+                <source srcset="images/capetown_small.webp" media="(max-width: 600px)">
+
+                <source srcset="images/capetown_medium.webp" media="(max-width: 1000px)">
+
+                <img src="images/capetown_large.webp" alt="Cape Town and Table Mountain in South Africa"
+                    class="hero-image">
+            </picture>
+
+            <section class="data card">
+                <h2>Data</h2>
+
+                <div class="data-list">
+
+                    <p><strong>Area:</strong> 2,445 sq km</p>
+
+                    <p><strong>Population:</strong> 4,772,846</p>
+
+                    <p><strong>Capital:</strong> Cape Town (legislative capital)</p>
+
+                    <p><strong>Languages:</strong> English, Afrikaans, isiXhosa</p>
+
+                    <p><strong>Currency:</strong> South African Rand (ZAR)</p>
+
+                    <p><strong>Time Zone:</strong> UTC+2</p>
+
+                    <p><strong>Calling Code:</strong> +27</p>
+
+                    <p><strong>Internet TLD:</strong> .za</p>
+
+                </div>
+            </section>
+
+            <section class="weather card">
+
+                <h2>Weather</h2>
+
+                <img src="images/partly_cloudy_svg.svg" alt="Partly cloudy weather" class="weather-icon">
+
+                <div class="weather-list">
+
+                    <p><strong>Temperature:</strong>
+                        <span id="temperature">17</span> °C
+                    </p>
+
+                    <p><strong>Conditions:</strong> Mostly Clear</p>
+
+                    <p><strong>Wind:</strong>
+                        <span id="wind">14</span> km/h
+                    </p>
+
+                    <p><strong>Wind Chill:</strong>
+                        <span id="windchill">N/A</span>
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Cabryn Bray | Cape Town, South Africa
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastmodified"></span>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

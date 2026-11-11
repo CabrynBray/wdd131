@@ -1,0 +1,153 @@
+/* GLOBAL CSS VARIABLES */
+:root {
+    --primary-color: #F1A66A;
+    --secondary-color: #a1c276;
+    --accent-color: #F7EE7F;
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --card-background: rgba(255, 255, 255, 0.90);
+    --heading-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin: 12px 0;
+    line-height: 1.4;
+}
+
+.data {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.data-list p {
+    font-size: 1rem;
+}
+
+.weather {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.weather-icon {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 700px) {
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero picture {
+        height: 600px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .card {
+        position: absolute;
+        z-index: 1;
+        width: min(320px, 30%);
+        background-color: var(--card-background);
+        padding: 20px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .card h2 {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 15px;
+        margin: -10px -10px 25px;
+    }
+
+    .data {
+        top: 40px;
+        left: 20px;
+        border: none;
+    }
+
+    .weather {
+        bottom: 40px;
+        right: 20px;
+        border: none;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 15px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}

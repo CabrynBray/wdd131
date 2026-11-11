@@ -1,11 +1,10 @@
-/* GLOBAL CSS VARIABLES */
 :root {
-    --primary-color: #F1A66A;
-    --secondary-color: #a1c276;
-    --accent-color: #F7EE7F;
-    --background-color: #ffffff;
-    --text-color: #222222;
-    --card-background: rgba(255, 255, 255, 0.90);
+    --primary-color: #173B4D;
+    --secondary-color: #287C78;
+    --accent-color: #D9A441;
+    --background-color: #F4EBDD;
+    --text-color: #263238;
+    --card-background: #FFFFFF;
     --heading-font: Arial, Helvetica, sans-serif;
 }
 
@@ -24,10 +23,10 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 25px;
-    border-bottom: 10px solid var(--secondary-color);
+    border-bottom: 8px solid var(--accent-color);
 }
 
 header h1 {
@@ -54,20 +53,23 @@ header h1 {
 .card {
     padding: 20px;
     text-align: center;
+    background-color: var(--card-background);
 }
 
 .card h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 .card p {
     margin: 12px 0;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: var(--text-color);
 }
 
 .data {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #D5D5D5;
 }
 
 .data-list p {
@@ -75,7 +77,7 @@ header h1 {
 }
 
 .weather {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #D5D5D5;
 }
 
 .weather-icon {
@@ -87,7 +89,7 @@ header h1 {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 25px 15px;
     font-size: 1rem;
@@ -116,12 +118,13 @@ footer {
         width: min(320px, 30%);
         background-color: var(--card-background);
         padding: 20px;
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
     }
 
     .card h2 {
         background-color: var(--secondary-color);
-        color: white;
+        color: #FFFFFF;
         padding: 15px;
         margin: -10px -10px 25px;
     }

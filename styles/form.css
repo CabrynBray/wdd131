@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #111;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #e3e9df;
+    border: 2px solid #b8c5b4;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form>label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+fieldset p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 5px 10px 15px;
+}
+
+.rating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating label {
+    order: -1;
+    color: #b38a58;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.rating input {
+    width: 42px;
+    height: 42px;
+    accent-color: #264027;
+    cursor: pointer;
+}
+
+.rating span {
+    display: none;
+}
+
+fieldset label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    accent-color: #264027;
+    vertical-align: middle;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 18px;
+    margin-top: 15px;
+    background-color: #f8f5ed;
+    border: 2px solid #173d2b;
+    border-radius: 5px;
+    color: #173d2b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #173d2b;
+    color: white;
+}
+
+.confirmation {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.confirmation h2 {
+    color: #173d2b;
+    margin-bottom: 15px;
+}
+
+.confirmation p {
+    margin-bottom: 15px;
+}
+
+.confirmation a {
+    display: inline-block;
+    background-color: #173d2b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.confirmation a:hover {
+    background-color: #3c5233;
+}
+
+footer {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 35px;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        margin: 20px 10px;
+        padding: 22px;
+    }
+
+    form>label,
+    legend {
+        font-size: 1.1rem;
+    }
+
+    .rating {
+        gap: 5px;
+        padding: 5px 0 15px;
+    }
+
+    .rating label {
+        font-size: 1.2rem;
+    }
+
+    .rating input {
+        width: 35px;
+        height: 35px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.95rem;
+    }
+}
